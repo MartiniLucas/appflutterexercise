@@ -10,10 +10,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.pinkAccent[20],
+        backgroundColor: Colors.deepPurple[10],
         appBar: AppBar(
             title: Text('Visualizador de Imagens'),
-            backgroundColor: Colors.pinkAccent),
+            backgroundColor: Colors.deepPurple[600]),
         body: Center(
           child: Container(
             padding: EdgeInsets.all(20),
@@ -31,10 +31,7 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                       Expanded(
-                        child: Image(
-                          image: NetworkImage(
-                              'https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg'),
-                        ),
+                        child: Image.asset('images/diamante.png'),
                       ),
                     ],
                   ),
@@ -45,10 +42,7 @@ class MyApp extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Expanded(
-                        child: Image(
-                          image: NetworkImage(
-                              'https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg'),
-                        ),
+                        child: Image.asset('images/diamante.png'),
                       ),
                       Expanded(
                         child: Image(
